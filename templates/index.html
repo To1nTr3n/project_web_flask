@@ -5,8 +5,8 @@
     <title>Cửa hàng bàn phím TN Store</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/img/icon/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/favicon.ico">
     <!-- Load Require CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font CSS -->
@@ -41,17 +41,13 @@
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="about.html">Giới thiệu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="account.html">Tài khoản</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Liên hệ</a>
                         </li>
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
-                    <a class="nav-link" href="#"><i class='bx bx-shopping-bag bx-sm bx-tada-hover text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-cog bx-sm bx-tada-hover text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm bx-tada-hover text-primary'></i></a>
+                    <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-3" href="#" role="button">Đăng kí</a>
+                    <a class="banner-button btn rounded-pill btn-outline-primary btn-lg px-3" href="login.html" role="button">Đăng nhập</a>
                 </div>
             </div>
         </div>
@@ -147,30 +143,30 @@
 
 
     <!-- Bắt đầu buôn bán thôi -->
-    <section class="service-wrapper py-3">
+    <section class="wrapper py-3">
         <div class="container-fluid pb-3">
             <div class="row">
                 <h2 class="h2 text-center col-12 py-5 semi-bold-600">Cửa hàng bàn phím và phụ kiện</h2>
             </div>
-            <p class="service-footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
+            <p class="footer col-10 offset-2 col-lg-9 offset-lg-3 text-start pb-3 text-muted px-2">
                 Cửa hàng chúng tôi đem đến cho bạn nhiều mẫu mã, không những sản phẩm đẹp mà chất lượng miễn bàn luôn á~
             </p>
         </div>
 
-        <div class="service-tag py-5 bg-secondary">
+        <div class="tag py-5 bg-secondary">
             <div class="col-md-12">
                 <ul class="nav d-flex justify-content-center">
                     <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary active shadow rounded-pill text-light px-4 light-300" href="#" data-filter=".project">Tất cả</a>
+                        <a class="filter-btn nav-link btn-outline-primary active shadow rounded-pill text-light px-4 light-300" href="#" data-filter=".all">Tất cả</a>
                     </li>
                     <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".graphic">Bàn phím cơ</a>
+                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".key">Bàn phím cơ</a>
                     </li>
                     <li class="filter-btn nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".ui">Keycaps</a>
+                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".keycaps">Keycaps</a>
                     </li>
                     <li class="nav-item mx-lg-4">
-                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".branding">Switch</a>
+                        <a class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300" href="#" data-filter=".switch">Switch</a>
                     </li>
                 </ul>
             </div>
@@ -179,112 +175,202 @@
     </section>
 
     <section class="container overflow-hidden py-5">
-        <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 projects">
+        <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-3 full">
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ui branding">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="service card-img" src="./assets/img/services-01.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">UI/UX design</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            <div class="col-xl-3 col-md-4 col-sm-6 all key ">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/key/key-EK384W.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Key</span> -->
+                            <p class="card-text">Bàn Phím cơ không dây E-Dra EK384W Gateron Switch</p>
+                            <p class="card-text">1.270.000đ</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-02.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Social Media</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            <div class="col-xl-3 col-md-4 col-sm-6 all keycaps">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/keycaps/keycap-XDA-HoneyBee.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Keycap XDA HoneyBee Thick PBT – 137 Key</p>
+                            <p class="card-text">450.000đ</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-03.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Marketing</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            <div class="col-xl-3 col-md-4 col-sm-6 all key">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/key/key-EK396W.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Bàn phím cơ không dây E-Dra EK396W ( Pre Order -Tặng kèm chuột EM621W )</p>
+                            <p class="card-text">1.399.000đ</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-04.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Graphic</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            <div class="col-xl-3 col-md-4 col-sm-6 all keycaps">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/keycaps/keycaps-shiba-inu.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Keycap Shiba Inu XDA Thick PBT 139 Phím</p>
+                            <p class="card-text">600.000đ</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-05.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Digtal Marketing</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            <div class="col-xl-3 col-md-4 col-sm-6 all keycaps">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/keycaps/keycap-Shimmer.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Keycap Shimmer PBT XDA Dyesub 125 Phím</p>
+                            <p class="card-text">390.000đ</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-06.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Market Research</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            <div class="col-xl-3 col-md-4 col-sm-6 all keycaps">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/keycaps/keycap-GameOver.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class=" work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Keycap GameOver Cherry Profile OEM – 108 Phím</p>
+                            <p class="card-text">350.000đ</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project branding">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-07.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Business</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            <div class="col-xl-3 col-md-4 col-sm-6 all switch">
+                <a href="#" class=" work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/switch/s-omronJapan.jpg" alt="Card image">
+                    <div class=" work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Switch chuột Omron Japan</p>
+                            <p class="card-text">25.000đ</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
             <!-- Start Recent Work -->
-            <div class="col-xl-3 col-md-4 col-sm-6 project ui graphic branding">
-                <a href="#" class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
-                    <img class="card-img" src="./assets/img/services-08.jpg" alt="Card image">
-                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
-                        <div class="service-work-content text-left text-light">
-                            <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">Branding</span>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            <div class="col-xl-3 col-md-4 col-sm-6 all switch">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/switch/s-huano.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Switch Chuột Huano 80M (80 triệu lần bấm) Pink</p>
+                            <p class="card-text">25.000đ</p>
                         </div>
                     </div>
                 </a>
-            </div><!-- End Recent Work -->
+            </div>
+            <!-- End Recent Work -->
 
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 all switch">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/switch/s-pink.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Feker Holy Panda Switch - Switch thay thế cho bàn phím cơ</p>
+                            <p class="card-text">10.000đ</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->    
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 all switch">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/switch/s-AOA.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Switch bàn phím cơ Original Aspiration OA Switch</p>
+                            <p class="card-text">20.000đ</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->    
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 all key">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/key/key-EK387RGB.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Bàn phím chơi game cơ E-DRA EK387 RGB TKL</p>
+                            <p class="card-text">780.000đ</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 all key">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/key/key-EK861.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Bàn phím cơ không dây DAREU EK861 61 Phím</p>
+                            <p class="card-text">1.250.000đ</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->
+
+            <!-- Start Recent Work -->
+            <div class="col-xl-3 col-md-4 col-sm-6 all keycaps">
+                <a href="#" class="work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="card-img" src="./assets/img/product/keycaps/keycap-PsyDuck.jpg" alt="Card image">
+                    <div class="work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="work-content text-left text-light">
+                            <!-- <span class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300"></span> -->
+                            <p class="card-text">Keycap PsyDuck 131 Phím OEM Profile Thick PBT</p>
+                            <p class="card-text">490.000đ</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- End Recent Work -->
         </div>
     </section>
     <!-- End Service -->
@@ -307,7 +393,6 @@
         </div>
     </section>
     <!-- End View Work -->
-
 
     <!-- Start Footer -->
     <footer class="bg-secondary pt-4">
@@ -360,8 +445,8 @@
                 </div>
 
                 <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
-                    <h2 class="h4 pb-lg-3 text-light light-300">Sản phẩm</h2>
-                    <ul class="list-unstyled text-light light-300">
+                    <h2 class="h4 pb-lg-3 text-light light-300" >Sản phẩm</h2>
+                    <ul class="list-unstyled text-light light-300" >
                         <li class="pb-2">
                             <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" href="#">Bàn phím cơ</a>
                         </li>
@@ -415,13 +500,13 @@
     <script>
         $(window).load(function() {
             // init Isotope
-            var $projects = $('.projects').isotope({
-                itemSelector: '.project',
+            var $full = $('.full').isotope({
+                itemSelector: '.all',
                 layoutMode: 'fitRows'
             });
             $(".filter-btn").click(function() {
                 var data_filter = $(this).attr("data-filter");
-                $projects.isotope({
+                $full.isotope({
                     filter: data_filter
                 });
                 $(".filter-btn").removeClass("active");

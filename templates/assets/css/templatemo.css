@@ -1,20 +1,12 @@
 /*
-
-TemplateMo 561 Purple Buzz
-
-https://templatemo.com/tm-561-purple-buzz
-
 ---------------------------------------------
 Table of contents
 ------------------------------------------------
 1. Typography
 2. Main Nav
-3. Home
-4. About
-5. Work
-6. Single Work
-7. Pricing
-8. Contact
+3. Trang chủ
+4. Giới thiệu
+5. Liên hệ
 --------------------------------------------- */
 
 html {font-family: 'Open Sans', sans-serif;}
@@ -51,7 +43,7 @@ p, a {font-weight: 400;}
 #main_nav .nav-item .nav-link:hover {color: #fff;}
 /* Home */
 #index_banner {
-  background-image: url('./../img/banner-bg-01.jpg');
+  background-image: url('./../img/banner/banner-bg-01.jpg');
   background-position: center center; background-size: cover;
   height: 100%;
   min-height: 60vh;
@@ -73,56 +65,32 @@ p, a {font-weight: 400;}
 #index_banner .carousel-indicators.active {
   background-color: #6266ea !important;
 }
-.service-wrapper .service-footer {
+.wrapper .footer {
   max-width: 720px;
 }
-.service-work.card {
+.work.card {
   border-radius: 10px !important;
   cursor: pointer;
 }
-.service-work .service-work-vertical {
+.work .work-vertical {
 	background: rgb(0,0,0);
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33.33%, rgba(255,255,255,1) 66.66%, rgba(255,255,255,0) 99.99%);
   background-size: 300% 300%;
   background-position: 0% 100%;
   transition: .5s;
 }
-.service-work .service-work-vertical:hover {
+.work .work-vertical:hover {
   background-position: 0% 0%;
   transition: .5s;
 }
-.service-work .service-work-vertical:hover * {
+.work .work-vertical:hover * {
   color: #000;
   border-color: #000;
   transition: .5s;
 }
-.recent-work.card{
-  border-radius: 10px !important;
-}
-.recent-work .recent-work-vertical {
-	background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%);
-  background-size: 300% 300%;
-  background-position: 0% 100%;
-  transition: .5s;
-  cursor: pointer;
-}
-.recent-work .recent-work-vertical:hover {
-  background-position: 0% 0%;
-  transition: .5s;
-}
-.recent-work .recent-work-vertical:hover div.recent-work-content {
-  top: 50%;
-  margin-top: -2.5em;
-  position: absolute;
-}
-.recent-work .recent-work-vertical:hover * {
-  color: white;
-  transition: .5s;
-}
-/* About */
+/* Giới thiệu */
 #work_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
+  background-image: url('./../img/banner/banner-bg-02.jpg');
   background-position: center center; background-size: cover;
   height: 100%;
   width: 100%;
@@ -155,33 +123,7 @@ p, a {font-weight: 400;}
 .team-member:hover .team-member-img {
   padding: 10px !important;
 }
-
-/* Work */
-/* Singel Work */
-#work_single_banner {
-  background-image: url('./../img/banner-bg-02.jpg');
-  background-position: center center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-}
-.related-content {
-  border-radius: 20px;
-  cursor: pointer;
-}
-/* Pricing */
-.pricing-list {
-  margin-bottom: 1px;
-}
-.pricing-table {
-  max-width: 350px;
-  margin: auto;
-}
-.pricing-table,
-.pricing-horizontal {
-  border-radius: 15px !important;
-}
-/* Contact */
+/* Liên hệ */
 #floatingtextarea {
   height: 150px
 }

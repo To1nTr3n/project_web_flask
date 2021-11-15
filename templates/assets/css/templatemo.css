@@ -32,7 +32,7 @@ p, a {font-weight: 400;}
   width: 150px;
   display:block;
   position: absolute;
-  border-bottom:  5px solid #6266ea;
+  border-bottom:  5px solid #62bfea;
   padding-top: .5em;
 }
 .typo-space-line-center::after {
@@ -40,7 +40,7 @@ p, a {font-weight: 400;}
   margin-left: -75px;
 }
 /* Main Nav */
-#main_nav .nav-item .nav-link:hover {color: #fff;}
+#main_nav .nav-item .nav-link:hover {color: rgb(233, 238, 247);}
 /* Home */
 #index_banner {
   background-image: url('./../img/banner/banner-bg-01.jpg');

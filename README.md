@@ -30,14 +30,17 @@ $ cd ../../
 $ pip install -r requirements.txt
 ```
 💡 Working
-1. Open terminal/cmd. Go into the cloned project directory and type the following command:
+1. You access config.py and edit
+```
+ADMINS = ['your-email@gmail.com'] #your-email
+```
+2. Open terminal/cmd. Go into the cloned project directory and type the following command:
 ```
 $ set MAIL_SERVER=smtp.googlemail.com
 $ set MAIL_PORT=587
 $ set MAIL_USE_TLS=1
 $ set MAIL_USERNAME= <your_email@gmail.com>
 $ set MAIL_PASSWORD= <your_password>
-$ set ADMINS= <your_email@gmail.com>
 ```
 
 ```

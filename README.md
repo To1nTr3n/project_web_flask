@@ -46,4 +46,11 @@ $ set ADMINS= <your_email@gamil.com>
 $ flask run
 ```
 
+# Note: google is not allowing you to log in via smtplib because it has flagged this sort of login as "less secure", so what you have to do is go to this link while you're logged in to your google account, and allow the access:
+- https://www.google.com/settings/security/lesssecureapps
+![image](https://user-images.githubusercontent.com/65596323/143179043-015ec854-ab31-46d2-b5e1-f39046f41888.png)
+
+- https://accounts.google.com/DisplayUnlockCaptcha
+![image](https://user-images.githubusercontent.com/65596323/143179076-40f9cebf-e4b5-431d-bbf3-13eeedaf9487.png)
+
 

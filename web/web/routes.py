@@ -2,34 +2,34 @@ from datetime import datetime
 from flask import render_template, flash, redirect, url_for, request
 from flask_login import current_user, login_user, logout_user, login_required
 from werkzeug.urls import url_parse
-from app import app, db
-from app.forms import LoginForm, RegistrationForm, ResetPasswordRequestForm, ResetPasswordForm
-from app.email import send_password_reset_email
-from app.models import User
+from web import web, db
+from web.forms import LoginForm, RegistrationForm, ResetPasswordRequestForm, ResetPasswordForm
+from web.email import send_password_reset_email
+from web.models import User
 
-@app.before_request
+@web.before_request
 def before_request():
     if current_user.is_authenticated:
         current_user.last_seen = datetime.utcnow()
         db.session.commit()
 
-@app.route('/', methods=['GET', 'POST'])
-@app.route('/index', methods=['GET', 'POST'])
+@web.route('/', methods=['GET', 'POST'])
+@web.route('/index', methods=['GET', 'POST'])
 
 def index():
     return render_template('index.html', title='Home')
 
-@app.route('/about', methods=['GET', 'POST'])
+@web.route('/about', methods=['GET', 'POST'])
 def about():
     return render_template('about.html', title='Home')
 
 
-@app.route('/contact', methods=['GET', 'POST'])
+@web.route('/contact', methods=['GET', 'POST'])
 def contact():
     return render_template('contact.html', title='contact')
 
 
-@app.route('/login', methods=['GET', 'POST'])
+@web.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
         return redirect(url_for('index'))
@@ -48,12 +48,12 @@ def login():
 
 
 
-@app.route('/logout')
+@web.route('/logout')
 def logout():
     logout_user()
     return redirect(url_for('index'))
 
-@app.route('/register', methods=['GET', 'POST'])
+@web.route('/register', methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
         return redirect(url_for('index'))
@@ -68,7 +68,7 @@ def register():
     return render_template('register.html', title='Register', form=form)
 
 @login_required
-@app.route('/<username>')
+@web.route('/<username>')
 @login_required
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
@@ -76,7 +76,7 @@ def user(username):
     return render_template('user.html', user=user)
 
 
-@app.route('/reset_password_request', methods=['GET', 'POST'])
+@web.route('/reset_password_request', methods=['GET', 'POST'])
 def reset_password_request():
     if current_user.is_authenticated:
         return redirect(url_for('index'))
@@ -90,7 +90,7 @@ def reset_password_request():
     return render_template('reset_password_request.html',
                            title='Reset Password', form=form)
 
-@app.route('/reset_password/<token>', methods=['GET', 'POST'])
+@web.route('/reset_password/<token>', methods=['GET', 'POST'])
 def reset_password(token):
     if current_user.is_authenticated:
         return redirect(url_for('index'))

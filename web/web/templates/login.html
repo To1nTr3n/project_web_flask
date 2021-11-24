@@ -3,6 +3,8 @@ wtf.quick_form(form)
 {% import 'bootstrap/wtf.html' as wtf %}
 
 {% block app_content %}
+    <br>
+    <br>
     <style>
         body {background-color: powderblue;}
         h1{color: blue; text-align: center;}
@@ -24,5 +26,7 @@ wtf.quick_form(form)
         Forgot Your Password?
         <a href="{{ url_for('reset_password_request') }}">Click to Reset</a>
     </p>
+    <br>
+    <br>
 {% endblock %}
 

@@ -1,2 +1,0 @@
-FLASK_APP=myblog.py
-FLASK_DEBUG=1s

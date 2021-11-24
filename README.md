@@ -7,8 +7,6 @@ TRẦN ĐỨC TOÀN (Leader)
 
 LÊ THỊ THANH NGÂN
 
-Đại học Văn Lang
-
 🔑 Prerequisites
 All the dependencies and required libraries are included in the file requirements.txt
 🚀  Installation
@@ -37,9 +35,9 @@ $ pip install -r requirements.txt
 $ set MAIL_SERVER=smtp.googlemail.com
 $ set MAIL_PORT=587
 $ set MAIL_USE_TLS=1
-$ set MAIL_USERNAME= <your_email@gamil.com>
-$ set MAIL_PASSWORD= <your_passoword>
-$ set ADMINS= <your_email@gamil.com>
+$ set MAIL_USERNAME= <your_email@gmail.com>
+$ set MAIL_PASSWORD= <your_password>
+$ set ADMINS= <your_email@gmail.com>
 ```
 
 ```

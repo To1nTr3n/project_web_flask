@@ -6,7 +6,7 @@ from threading import Thread
 
 
 def send_async_email(web, msg):
-    with web.web_context():
+    with web.app_context():
         mail.send(msg)
 
 def send_email(subject, sender, recipients, text_body, html_body):
